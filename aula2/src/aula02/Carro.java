@@ -11,7 +11,7 @@ public class Carro {
         this.velocidade += delta;
     }
     public void Frear(double delta){
-        if((this.velocidade-=delta) < 0){
+        if((this.velocidade-delta) < 0){
             this.velocidade = 0;
         } else {
             this.velocidade -=delta;
