@@ -12,7 +12,8 @@ public class Lobo extends Animal{
     }
 
     public void pedir(){
-        System.out.println("BABY, I'M PREYING ON YOU TONIGHT\r\n" + 
+        System.out.println("MIM DÊ PAPAI\r\n"+
+                        "BABY, I'M PREYING ON YOU TONIGHT\r\n" + 
                         "HUNT YOU DOWN EAT YOU ALIVE\r\n" + 
                         "JUST LIKE ANIMALS\r\n" + 
                         "ANIMALS\r\n" +
