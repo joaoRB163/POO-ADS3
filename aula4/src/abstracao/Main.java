@@ -5,12 +5,18 @@ public class Main {
         
         Gato gato = new Gato("Laranja");
         Cachorro cachorro = new Cachorro("Golden Retriever");
-        Leao leao = new Leao("Africano");
+        Lobo leao = new Lobo("Africano");
 
         Animal[] animais = new Animal[]{gato, cachorro, leao};
 
         for (Animal animal : animais) {
             animal.emitirSom();
+
+            if(animal instanceof Cachorro ){
+                ((Cachorro)animal).abanarRabo(); // downcast
+            } else  if (animal instanceof Lobo){
+                ((Lobo)animal).pidao();
+            }
         }
     }
 }
