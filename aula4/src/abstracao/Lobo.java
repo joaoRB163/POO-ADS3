@@ -11,7 +11,11 @@ public class Lobo extends Animal{
         System.out.println("AUUUUUUUUUUUUUUUUU");
     }
 
-    public void pidao(){
-        System.out.println("MIM DÊ PAPAI");
+    public void pedir(){
+        System.out.println("BABY, I'M PREYING ON YOU TONIGHT\r\n" + 
+                        "HUNT YOU DOWN EAT YOU ALIVE\r\n" + 
+                        "JUST LIKE ANIMALS\r\n" + 
+                        "ANIMALS\r\n" +
+                        "LIKE ANIMALS-MALS");
     }
 }

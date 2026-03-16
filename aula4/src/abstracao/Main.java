@@ -15,7 +15,7 @@ public class Main {
             if(animal instanceof Cachorro ){
                 ((Cachorro)animal).abanarRabo(); // downcast
             } else  if (animal instanceof Lobo){
-                ((Lobo)animal).pidao();
+                ((Lobo)animal).pedir();
             }
         }
     }
