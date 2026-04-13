@@ -10,6 +10,8 @@ import javax.swing.JTextField;
 
 public class Janela extends JFrame {
 
+    Acao acao = new Acao();
+
     public Janela() {
         super("Minha Janela");
         setSize(700, 300);
@@ -39,6 +41,14 @@ public class Janela extends JFrame {
                 
 			}
 		});
+        
+        text1.addActionListener(acao);
     }
     
+    class Acao implements ActionListener {
+        @Override
+        public void actionPerformed(ActionEvent e) {
+            System.out.println("Esse é uma ação não anônima");
+        }
+    }
 }
