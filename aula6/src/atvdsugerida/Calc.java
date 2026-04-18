@@ -24,6 +24,7 @@ public class Calc extends JFrame{
         JButton b2 = new JButton("Sub");
         JButton b3 = new JButton("Div");
         JButton b4 = new JButton("Mult");
+        JButton b5 = new JButton("Limpar");
 
         JTextField a = new JTextField(3);
         JTextField b = new JTextField(3);
@@ -37,6 +38,7 @@ public class Calc extends JFrame{
         p.add(b2);
         p.add(b3);
         p.add(b4);
+        p.add(b5);
 
         b1.addActionListener(new ActionListener(){
             @Override
@@ -67,6 +69,15 @@ public class Calc extends JFrame{
             @Override
             public void actionPerformed(ActionEvent e) {
                 r.setText(String.valueOf(Double.valueOf(a.getText()) * Double.valueOf(b.getText())));
+            }
+        });
+
+        b5.addActionListener(new ActionListener(){
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                a.setText("");
+                b.setText("");
+                r.setText("");
             }
         });
     }
