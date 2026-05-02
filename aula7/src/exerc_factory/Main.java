@@ -3,17 +3,13 @@ package exerc_factory;
 public class Main {
 
     public static void main(String[] args) {
-        Formas circulo = new Circulo();
-        Formas quadrado = new Quadrado();
-        Formas triangulo = new Triangulo();
+        Formas circulo = FormasFactory.criar("circulo");
+        Formas quadrado = FormasFactory.criar("quadrado");
+        Formas triangulo = FormasFactory.criar("triangulo");
 
-        double areaCirculo = circulo.calcularArea(5);
-        double areaQuadrado = quadrado.calcularArea(4);
-        double areaTriangulo = triangulo.calcularArea(6, 3);
-
-        System.out.println("Área do Círculo: " + areaCirculo);
-        System.out.println("Área do Quadrado: " + areaQuadrado);
-        System.out.println("Área do Triângulo: " + areaTriangulo);
+        System.out.println("Área do Círculo: " + circulo.calcularArea(5));
+        System.out.println("Área do Quadrado: " + quadrado.calcularArea(4));
+        System.out.println("Área do Triângulo: " + triangulo.calcularArea(6, 3));
     }
     
 }
