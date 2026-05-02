@@ -23,7 +23,8 @@ public class Main {
         estacao1.setMedidas(22.0, 85);
         System.out.println("================Estação 2================");
         estacao2.setMedidas(28.0, 85);
-        System.out.println("================================");
-        estacao2.setMedidas(20.0, 70);
+        estacao2.removerObservador(alerta);
+        System.out.println("================Estação 2 - Sem Alerta de Chuva================");
+        estacao2.setMedidas(20.0, 90);
     }
 }
