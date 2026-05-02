@@ -2,6 +2,7 @@ package factory;
 
 public class Main {
     public static void main(String[] args) {
+        // Criando notificações
         Notificacao n1 = NotificacaoFactory.criar("email");
         Notificacao n2 = NotificacaoFactory.criar("sms");
         Notificacao n3 = NotificacaoFactory.criar("push");

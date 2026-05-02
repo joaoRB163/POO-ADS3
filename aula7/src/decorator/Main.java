@@ -2,6 +2,7 @@ package decorator;
 
 public class Main {
     public static void main(String[] args) {
+        // objeto da Interface Texto com instância do TextoSimples
         Texto base = new TextoSimples("Olá Mundo");
         System.out.println(base.getConteudo()); // Olá Mundo
 

@@ -27,6 +27,7 @@ public class Produto implements Sujeito {
 
     public void setPreco(double novoPreco) {
         this.preco = novoPreco;
+        // Notificando os observadores sobre a mudança de preço
         notificarTodos("PRECO_ALTERADO", novoPreco);
     }
 
